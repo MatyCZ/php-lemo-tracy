@@ -16,7 +16,12 @@
     ],
     "require": {
         "php": ">=5.4",
-        "tracy/tracy": "dev-master"
+        "tracy/tracy": "dev-master",
+        "zenframework/zend-loader": ">=2.5",
+        "zenframework/zend-eventmanager": ">=2.5",
+        "zenframework/zend-modulemanager": ">=2.5",
+        "zenframework/zend-servicemanager": ">=2.5",
+        "zenframework/zend-stdlib": ">=2.5"
     },
     "autoload": {
         "psr-0": {
