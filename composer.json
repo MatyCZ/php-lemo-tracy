@@ -17,11 +17,11 @@
     "require": {
         "php": ">=5.4",
         "tracy/tracy": "dev-master",
-        "zenframework/zend-loader": ">=2.5",
-        "zenframework/zend-eventmanager": ">=2.5",
-        "zenframework/zend-modulemanager": ">=2.5",
-        "zenframework/zend-servicemanager": ">=2.5",
-        "zenframework/zend-stdlib": ">=2.5"
+        "zendframework/zend-loader": ">=2.5",
+        "zendframework/zend-eventmanager": ">=2.5",
+        "zendframework/zend-modulemanager": ">=2.5",
+        "zendframework/zend-servicemanager": ">=2.5",
+        "zendframework/zend-stdlib": ">=2.5"
     },
     "autoload": {
         "psr-0": {
