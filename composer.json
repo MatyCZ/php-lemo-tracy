@@ -1,6 +1,6 @@
 {
     "name": "matycz/lemo-tracy",
-    "description": "",
+    "description": "Tracy integration to Zend Framework 2",
     "type": "library",
     "keywords": [
         "zf2",
@@ -11,12 +11,12 @@
     "authors": [
         {
             "name": "Matej Szendi",
-            "email": "matej.szendi@outlook.cz",
+            "email": "matej.szendi@outlook.cz"
         }
     ],
     "require": {
         "php": ">=5.4",
-        "tracy/tracy": "dev-master",
+        "tracy/tracy": "dev-master"
     },
     "autoload": {
         "psr-0": {
