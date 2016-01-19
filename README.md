@@ -14,4 +14,4 @@ Requirements
 Open terminal and go to your application directory
 
 1. Run `php composer.phar require matycz/matycz-tracy:1.*`
-2. Add `LemoTracy` to `application.ini` to section `modules` as one of first modules
+2. Add `LemoTracy` to `application.ini` to section `modules` as one of the first modules
