@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": ">=5.4",
-        "tracy/tracy": "dev-master",
+        "tracy/tracy": "2.4.x-dev",
         "zendframework/zend-loader": ">=2.5",
         "zendframework/zend-eventmanager": ">=2.5",
         "zendframework/zend-modulemanager": ">=2.5",
