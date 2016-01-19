@@ -1,0 +1,15 @@
+<?php
+
+return [
+    'lemo_tracy' => [
+        'enabled'      => true,     // Is Tracy enabled? (true = enabled | false = disabled)
+        'mode'         => null,     // Mode of traci (true = production | false = development | null = autodetect)
+        'show_bar'     => false,    // Can render Tracy bar? (true = visible | false = hidden)
+        'strict'       => true,     // Can show bluescreen immediately?
+        'email'        => '',       // In prodction mode send email with exception to this address
+        'log_directory' => '',      // Path to dir for loging exceptions
+        'log_severity' => '',       // Severity of exception which will be logged
+        'max_depth'    => 3,        // Max depth in variable dump
+        'max_len'      => 150,      // Max length of string in variable dump
+    ]
+];

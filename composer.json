@@ -1,0 +1,29 @@
+{
+    "name": "matycz/lemo-tracy",
+    "description": "",
+    "type": "library",
+    "keywords": [
+        "zf2",
+        "tracy"
+    ],
+    "homepage": "https://github.com/MatyCZ/LemoTracy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matej Szendi",
+            "email": "matej.szendi@outlook.cz",
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "tracy/tracy": "dev-master",
+    },
+    "autoload": {
+        "psr-0": {
+            "LemoTracy": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
