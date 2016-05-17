@@ -15,13 +15,13 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
-        "tracy/tracy": "2.4.x-dev",
-        "zendframework/zend-loader": ">=2.5",
-        "zendframework/zend-eventmanager": ">=2.5",
-        "zendframework/zend-modulemanager": ">=2.5",
-        "zendframework/zend-servicemanager": ">=2.5",
-        "zendframework/zend-stdlib": ">=2.5"
+        "php": "^5.5 || ^7.0",
+        "tracy/tracy": "^2.3",
+        "zendframework/zend-loader": "^2.5",
+        "zendframework/zend-eventmanager": "^2.6 || ^3.0",
+        "zendframework/zend-modulemanager": "^2.7",
+        "zendframework/zend-servicemanager": "^2.7 || ^3.0",
+        "zendframework/zend-stdlib": "^2.7 || ^3.0"
     },
     "autoload": {
         "psr-0": {
