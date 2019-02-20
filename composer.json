@@ -1,34 +1,32 @@
 {
     "name": "matycz/lemo-tracy",
-    "description": "Tracy integration to Zend Framework 2",
+    "description": "Tracy integration to Zend Framework",
+    "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
         "zf2",
         "tracy"
     ],
     "homepage": "https://github.com/MatyCZ/LemoTracy",
-    "license": "MIT",
     "authors": [
         {
-            "name": "Matej Szendi",
-            "email": "matej.szendi@outlook.cz"
+            "name": "Matej Szendi"
         }
     ],
-    "require": {
-        "php": "^5.5 || ^7.0",
-        "tracy/tracy": "2.*",
-        "zendframework/zend-loader": "2.* || 3.*",
-        "zendframework/zend-eventmanager": "2.* || 3.*",
-        "zendframework/zend-modulemanager": "2.* || 3.*",
-        "zendframework/zend-servicemanager": "2.* || 3.*",
-        "zendframework/zend-stdlib": "2.* || 3.*"
-    },
     "autoload": {
-        "psr-0": {
-            "LemoTracy": "src/"
-        },
-        "classmap": [
-            "./Module.php"
-        ]
+        "psr-4": {
+            "Lemo\\Tracy\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3",
+        "tracy/tracy": "^2.6",
+        "zendframework/zend-config": "^3.2",
+        "zendframework/zend-loader": "^2.6",
+        "zendframework/zend-eventmanager": "^3.0",
+        "zendframework/zend-mvc": "^2.7",
+        "zendframework/zend-modulemanager": "^2.8",
+        "zendframework/zend-servicemanager": "^3.4",
+        "zendframework/zend-stdlib": "^3.2"
     }
 }

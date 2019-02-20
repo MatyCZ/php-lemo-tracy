@@ -1,17 +1,12 @@
-LemoTracy Module for Zend Framework 2
+Tracy Module for Zend Framework
 =============
-Tracy integration to Zend Framework 2.
-The LemoTracy module provides integration of Tracy to Zend Framework quickly and easily.
+Tracy integration to Zend Framework.
+The Lemo\Tracy module provides integration of Tracy to Zend Framework quickly and easily with many configuration options.
 
-Requirements
-------------
-
-* [Tracy](https://github.com/nette/tracy) (version 2.4 - latest development)
-* [Zend Framework 2](https://github.com/zendframework/zf2) (version 2.5)
-
-## Setup
+## Installation
 
 Open terminal and go to your application directory
 
-1. Run `php composer.phar require matycz/matycz-tracy:1.*`
-2. Add `LemoTracy` to `application.ini` to section `modules` as one of the first modules
+1. Run `composer require matycz/lemo-tracy`
+2. Copy `lemotracy.local.php.dist` to `/config/autoload/` and rename it to `lemotracy.local.php`
+3. Add `Lemo\Tracy` to `/config/application.ini` to section `modules` as one of the first modules

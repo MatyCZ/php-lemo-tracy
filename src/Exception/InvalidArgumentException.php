@@ -1,6 +1,6 @@
 <?php
 
-namespace LemoTracy\Exception;
+namespace Lemo\Tracy\Exception;
 
 class InvalidArgumentException extends \InvalidArgumentException
 {

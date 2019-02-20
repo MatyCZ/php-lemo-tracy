@@ -1,9 +1,14 @@
 <?php
 
+namespace Lemo\Tracy;
+
 return [
     'service_manager' => [
+        'invokables' => [
+            Listener\TracyListener::class => Listener\TracyListener::class,
+        ],
         'factories' => [
-            'LemoTracy\Options\ModuleOptions'  => 'LemoTracy\Options\ModuleOptionsFactory',
+            Options\TracyOptions::class  => Options\TracyOptionsFactory::class,
         ]
     ],
 ];
