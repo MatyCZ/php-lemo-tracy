@@ -19,7 +19,7 @@
         }
     },
     "require": {
-        "php": "^7.3",
+        "php": "^7.2",
         "tracy/tracy": "^2.6",
         "zendframework/zend-config": "^3.2",
         "zendframework/zend-loader": "^2.6",
