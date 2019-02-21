@@ -43,8 +43,10 @@ class TracyListener extends AbstractListenerAggregate
     public function init(MvcEvent $event) : void
     {
         if (true === $this->tracyOptions->getEnabled()) {
-            if (null !== $this->tracyOptions->getMode()) {
-                Debugger::enable($this->tracyOptions->getMode());
+            Debugger::enable($this->tracyOptions->getMode());
+
+            if (null !== $this->tracyOptions->getEmail()) {
+                Debugger::$email = $this->tracyOptions->getEmail();
             }
 
             if (null !== $this->tracyOptions->getLogDirectory()) {

@@ -84,7 +84,7 @@ class TracyOptions extends AbstractOptions
      *
      * @return string
      */
-    public function getLogDirectory(): string
+    public function getLogDirectory(): ?string
     {
         return $this->logDirectory;
     }
@@ -96,16 +96,20 @@ class TracyOptions extends AbstractOptions
      * @throws InvalidArgumentException
      * @return self
      */
-    public function setLogDirectory(string $path): self
+    public function setLogDirectory(?string $path): self
     {
-        if (!is_dir($path)) {
-            throw new InvalidArgumentException(sprintf(
-                "Tracy log path '%s' does`t exists",
-                $path
-            ));
+        if (null !== $path) {
+            if (!is_dir($path)) {
+                throw new InvalidArgumentException(sprintf(
+                    "Tracy log path '%s' does`t exists",
+                    $path
+                ));
+            }
+
+            $path = realpath($path);
         }
 
-        $this->logDirectory = realpath($path);
+        $this->logDirectory = $path;
         return $this;
     }
 
@@ -125,7 +129,7 @@ class TracyOptions extends AbstractOptions
      * @param  int $logSeverity
      * @return self
      */
-    public function setLogSeverity(int $logSeverity): self
+    public function setLogSeverity(?int $logSeverity): self
     {
         $this->logSeverity = $logSeverity;
         return $this;
@@ -147,7 +151,7 @@ class TracyOptions extends AbstractOptions
      * @param  string $email
      * @return self
      */
-    public function setEmail(string $email): self
+    public function setEmail(?string $email): self
     {
         $this->email = $email;
         return $this;

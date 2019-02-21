@@ -1,9 +1,8 @@
 <?php
 
-namespace LemoTracy\Listener;
+namespace Lemo\Tracy\Listener;
 
 use Interop\Container\ContainerInterface;
-use Lemo\Tracy\Listener\TracyListener;
 use Lemo\Tracy\Options\TracyOptions;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
