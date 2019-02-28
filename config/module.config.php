@@ -4,10 +4,8 @@ namespace Lemo\Tracy;
 
 return [
     'service_manager' => [
-        'invokables' => [
-            Listener\TracyListener::class => Listener\TracyListener::class,
-        ],
         'factories' => [
+            Listener\TracyListener::class => Listener\TracyListenerFactory::class,
             Options\TracyOptions::class  => Options\TracyOptionsFactory::class,
         ]
     ],

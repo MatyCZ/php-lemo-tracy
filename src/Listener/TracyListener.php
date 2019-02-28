@@ -2,6 +2,7 @@
 
 namespace Lemo\Tracy\Listener;
 
+use Exception;
 use Lemo\Tracy\Options\TracyOptions;
 use Tracy\Debugger;
 use Zend\EventManager\AbstractListenerAggregate;
@@ -40,7 +41,7 @@ class TracyListener extends AbstractListenerAggregate
     /***
      * @param MvcEvent $event
      */
-    public function init(MvcEvent $event) : void
+    public function init(MvcEvent $event): void
     {
         if (true === $this->tracyOptions->getEnabled()) {
             Debugger::enable($this->tracyOptions->getMode());
@@ -80,14 +81,18 @@ class TracyListener extends AbstractListenerAggregate
     }
 
     /***
-     * @param MvcEvent $event
+     * @param  MvcEvent $event
+     * @throws Exception
      */
-    public function error(MvcEvent $event) : void
+    public function error(MvcEvent $event): void
     {
         if (
             true === $this->tracyOptions->getEnabled()
             && null !== $event->getParam('error')
+            && null !== $event->getParam('exception')
         ) {
+            ob_clean();
+
             throw $event->getParam('exception');
         }
     }
