@@ -2,12 +2,12 @@
 
 namespace Lemo\Tracy;
 
+use Laminas\EventManager\EventInterface;
+use Laminas\ModuleManager\Feature\BootstrapListenerInterface;
+use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\Mvc\MvcEvent;
+use Laminas\ServiceManager\ServiceManager;
 use Lemo\Tracy\Listener\TracyListener;
-use Zend\EventManager\EventInterface;
-use Zend\ModuleManager\Feature\BootstrapListenerInterface;
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-use Zend\Mvc\MvcEvent;
-use Zend\ServiceManager\ServiceManager;
 
 class Module implements
     BootstrapListenerInterface,

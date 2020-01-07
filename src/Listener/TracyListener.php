@@ -3,11 +3,11 @@
 namespace Lemo\Tracy\Listener;
 
 use Exception;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\Mvc\MvcEvent;
 use Lemo\Tracy\Options\TracyOptions;
 use Tracy\Debugger;
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventManagerInterface;
-use Zend\Mvc\MvcEvent;
 
 class TracyListener extends AbstractListenerAggregate
 {

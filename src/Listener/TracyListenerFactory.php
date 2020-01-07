@@ -3,8 +3,8 @@
 namespace Lemo\Tracy\Listener;
 
 use Interop\Container\ContainerInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 use Lemo\Tracy\Options\TracyOptions;
-use Zend\ServiceManager\Factory\FactoryInterface;
 
 class TracyListenerFactory implements FactoryInterface
 {

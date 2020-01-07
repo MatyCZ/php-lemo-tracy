@@ -2,8 +2,8 @@
 
 namespace Lemo\Tracy\Options;
 
+use Laminas\Stdlib\AbstractOptions;
 use Lemo\Tracy\Exception\InvalidArgumentException;
-use Zend\Stdlib\AbstractOptions;
 
 class TracyOptions extends AbstractOptions
 {
