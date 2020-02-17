@@ -7,7 +7,7 @@
         "laminas",
         "tracy"
     ],
-    "homepage": "https://github.com/MatyCZ/LemoTracy",
+    "homepage": "https://github.com/MatyCZ/php-lemo-tracy",
     "authors": [
         {
             "name": "Matej Szendi"
