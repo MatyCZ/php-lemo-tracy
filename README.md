@@ -1,7 +1,7 @@
-Tracy Module for Zend Framework
+Tracy Module for Laminas
 =============
-Tracy integration to Zend Framework.
-The Lemo\Tracy module provides integration of Tracy to Zend Framework quickly and easily with many configuration options.
+Tracy integration to Laminas.
+The Lemo\Tracy module provides integration of Tracy to Laminas quickly and easily with many configuration options.
 
 ## Installation
 
