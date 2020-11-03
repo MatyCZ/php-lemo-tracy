@@ -1,6 +1,6 @@
 {
     "name": "matycz/lemo-tracy",
-    "description": "Tracy integration to Zend Framework",
+    "description": "Tracy integration to Laminas",
     "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
@@ -20,14 +20,14 @@
     },
     "require": {
         "laminas/laminas-config": "^3.2",
-        "laminas/laminas-dependency-plugin": "^1.0",
+        "laminas/laminas-dependency-plugin": "^2.0",
         "laminas/laminas-eventmanager": "^3.0",
         "laminas/laminas-loader": "^2.6",
         "laminas/laminas-modulemanager": "^2.8",
         "laminas/laminas-mvc": "^3.1",
         "laminas/laminas-servicemanager": "^3.4",
         "laminas/laminas-stdlib": "^3.2",
-        "php": ">=7.2",
+        "php": ">=7.3",
         "tracy/tracy": "^2.6"
     }
 }
